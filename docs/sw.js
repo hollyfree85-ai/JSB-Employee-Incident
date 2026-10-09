@@ -1,0 +1,3 @@
+self.addEventListener('install',()=>self.skipWaiting());
+self.addEventListener('activate',event=>event.waitUntil(self.clients.claim()));
+self.addEventListener('fetch',event=>{if(event.request.mode==='navigate'&&new URL(event.request.url).origin===self.location.origin){event.respondWith(fetch(event.request).catch(()=>new Response('<!doctype html><html><meta name="viewport" content="width=device-width,initial-scale=1"><title>JSB Records</title><body style="font:24px Arial;padding:32px"><h1>JSB Records</h1><p>Connect to the internet, then reopen the app.</p><p>Hubungkan ke internet, lalu buka kembali aplikasi.</p></body></html>',{headers:{'Content-Type':'text/html'}})))}});

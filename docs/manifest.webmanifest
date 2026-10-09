@@ -1,0 +1,25 @@
+{
+  "id": "/JSB-Employee-Incident/",
+  "name": "JSB Employee Incident",
+  "short_name": "JSB Records",
+  "start_url": "/JSB-Employee-Incident/",
+  "scope": "/JSB-Employee-Incident/",
+  "display": "standalone",
+  "background_color": "#f1f3f6",
+  "theme_color": "#162c46",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
